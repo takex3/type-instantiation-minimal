@@ -4,6 +4,6 @@ import { query } from "./_generated/server";
 export const getFeedItem = query({
   args: {},
   handler: async (ctx, args): Promise<unknown> => {
-    return {};
+    return "foo";
   },
 });
