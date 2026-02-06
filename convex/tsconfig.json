@@ -5,7 +5,6 @@
    */
   "compilerOptions": {
     /* These settings are not required by Convex and can be modified. */
-    "allowJs": true,
     "strict": true,
     "moduleResolution": "Bundler",
     "jsx": "react-jsx",
@@ -13,13 +12,17 @@
     "allowSyntheticDefaultImports": true,
 
     /* These compiler options are required by Convex */
+    "allowJs": false,
     "target": "ESNext",
     "lib": ["ES2021", "dom"],
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "paths": {
+      "~/*": ["./*"],
+    },
   },
   "include": ["./**/*"],
-  "exclude": ["./_generated"]
+  "exclude": ["./_generated"],
 }
